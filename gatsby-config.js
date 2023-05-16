@@ -9,4 +9,8 @@ module.exports = {
     image: `/soccer.png`,
     siteUrl: `https://www.yourdomain.tld`,
   },
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+  ],
 }
