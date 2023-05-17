@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Using Gatsby Head`,
+    title: `Hello from config`,
     description: `Example project for the Gatsby Head API`,
     twitterUsername: `@gatsbyjs`,
     image: `/soccer.png`,
@@ -12,5 +12,13 @@ module.exports = {
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
+    },
+    "gatsby-plugin-mdx",
   ],
 }
